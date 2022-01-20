@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Chrome browser test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="PurchaseorderTest.CreatePurchaseOrderWithItemAndClickOnDownwardSymbolTest">
+        <methods>
+          <include name="createpurchasewithitemandClickDownward"/>
+          <include name="configBs"/>
+          <include name="configBc"/>
+          <include name="configAs"/>
+          <include name="configAc"/>
+          <include name="configBm"/>
+          <include name="configAm"/>
+        </methods>
+      </class> <!-- PurchaseorderTest.CreatePurchaseOrderWithItemAndClickOnDownwardSymbolTest -->
+      <class name="PurchaseorderTest.CreatePurchaseOrderWithItemAndClickOnUpwardSymbolTest">
+        <methods>
+          <include name="configBs"/>
+          <include name="configBc"/>
+          <include name="configAs"/>
+          <include name="configAc"/>
+          <include name="configBm"/>
+          <include name="createpurchaseorderwithUpwardSymbol"/>
+          <include name="configAm"/>
+        </methods>
+      </class> <!-- PurchaseorderTest.CreatePurchaseOrderWithItemAndClickOnUpwardSymbolTest -->
+    </classes>
+  </test> <!-- Chrome browser test(failed) -->
+  <test thread-count="5" parallel="tests" name="firefox browser test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="PurchaseorderTest.CreatePurchaseOrderWithItemAndClickOnDownwardSymbolTest">
+        <methods>
+          <include name="createpurchasewithitemandClickDownward"/>
+          <include name="configBs"/>
+          <include name="configBc"/>
+          <include name="configAs"/>
+          <include name="configAc"/>
+          <include name="configBm"/>
+          <include name="configAm"/>
+        </methods>
+      </class> <!-- PurchaseorderTest.CreatePurchaseOrderWithItemAndClickOnDownwardSymbolTest -->
+      <class name="PurchaseorderTest.CreatePurchaseOrderWithItemAndClickOnUpwardSymbolTest">
+        <methods>
+          <include name="configBs"/>
+          <include name="configBc"/>
+          <include name="configAs"/>
+          <include name="configAc"/>
+          <include name="configBm"/>
+          <include name="createpurchaseorderwithUpwardSymbol"/>
+          <include name="configAm"/>
+        </methods>
+      </class> <!-- PurchaseorderTest.CreatePurchaseOrderWithItemAndClickOnUpwardSymbolTest -->
+    </classes>
+  </test> <!-- firefox browser test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
